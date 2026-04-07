@@ -2,6 +2,22 @@
 
 ## Overview
 
+Hi! This is the repository that contains my implementation of the 2D Coordinate Counter pet project. This task includes taking in a list of raw 2D coordinates from a `.csv` file and map it in a `320×320` grid. Building this really helped me understand how computers actually interpret and see 2D spatial data.
+
+## Approach
+
+I decided to avoid using heavy libraries like `pandas` or `numpy` so I could understand the logic of the project.
+
+* **Grid Program:** I built the `CoordinateCounter` using standard Python lists. I learned that unlike the standard in Mathematics, in computer vision, `(x, y)` coordinates translates to `grid[y][x]` (Row first, then Column).
+
+* **Data Processing:** I used the built-in `csv` module to parse `coordinates.csv` line by line where it manually converted the string data into integer coordinates.
+
+## Visualization
+
+The final step was setting up `coordinate_counter_demo.ipynb`. At first, I printed the grid and it gave me a wall of unreadable numbers. That made me realize why `matplotlib` or `plotly` was initially recommended. From that, I utilized `matplotlib` to visualize the grid into a heatmap. As I ran `plt.imshow()`, the raw data revealed a picture of a man riding a horse. As an Applied Mathematics student, it was a great way to see firsthand that an image is essentially just a giant grid of numbers.
+
+## Original Assignment
+
 Build a small Python project that reads a CSV file of 2D coordinates and accumulates how many times each coordinate appears in a fixed-size grid.
 
 Included here is `coordinates.csv`. Details are as follows:
