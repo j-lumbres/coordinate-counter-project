@@ -16,6 +16,9 @@ I decided to avoid using heavy libraries like `pandas` or `numpy` so I could und
 
 The final step was setting up `coordinate_counter_demo.ipynb`. At first, I printed the grid and it gave me a wall of unreadable numbers. That made me realize why `matplotlib` or `plotly` was initially recommended. From that, I utilized `matplotlib` to visualize the grid into a heatmap. As I ran `plt.imshow()`, the raw data revealed a picture of a man riding a horse. As an Applied Mathematics student, it was a great way to see firsthand that an image is essentially just a giant grid of numbers.
 
+Here is the statis visualization of the data:
+![Static Horse Heatmap](heatmap.png)
+
 ## Original Assignment
 
 Build a small Python project that reads a CSV file of 2D coordinates and accumulates how many times each coordinate appears in a fixed-size grid.
